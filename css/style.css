@@ -1,0 +1,484 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-style: inherit;
+}
+html,
+body {
+    height: 100%;
+    color:rgb(0, 0, 0) ;
+    font-family: 'Open Sans', sans-serif;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+._container {
+    max-width: 1140px;
+    min-width: 420px;
+    padding: 0px 15px;
+    margin: 0px auto;
+    box-sizing: content-box;
+}
+/* -------------------- Навигация ----------------------- */
+.nav {
+    display: flex; 
+    font-size: 16px;
+    font-weight: 700;
+    flex-wrap: wrap;
+    padding: 0px 5px;
+}
+.nav__link {
+    margin-left: 50px;
+    color: #111111;
+    text-decoration: none;
+    opacity: 0.75;
+}
+.nav__link:last-child {
+    margin-right: 25px;
+}
+.nav__link:hover {
+    opacity: 1;
+}
+
+/* --------------------- Page -----------------------------*/
+.page{
+    flex: 1 1 auto;
+}
+.page___main-block {
+    background-color: #ffffff;
+}
+.page__services {
+    color: #111111;
+    height: 664px;
+}
+
+/* --------------------- Main -----------------------------*/
+.main-block {
+    position: relative;
+}
+.main-block__container {
+    display: flex;
+}
+.main-block__body {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    max-width: 589px;
+    height: 698px;
+}
+.main-block__title {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 194px 10px 0 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.main-block__text {
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    position: relative;
+    line-height: 1.5;
+    margin: 20px 10px 0 0;
+}
+.main-block__image {
+    margin: 400px 0px 0px 0px;
+}
+.main-block__image img{
+    width: 628px;
+    position: relative;
+    height: 720px;
+    object-position: 0% 50%;
+    background-position: 0% 50%;
+    margin: -360px 40px 0 auto;
+    object-fit: cover;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.block-text__button {
+    padding: 43px 0px 0px 0px;
+}
+.main-block__promeh{
+    width: 490px;
+    height: 400px;
+    position: absolute;
+    margin: 0 0 0 670px;
+    color: #ffffff;
+    background-color: #ff5126;
+}
+
+/* --------------------- Button -----------------------------*/
+.button{
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 12px;
+    padding: 15px 52px 15px 51px;
+    color:#ffffff;
+    border-radius: 0px;
+    background-color: #ff5126 ;
+    justify-content: center;
+    transition: background-color 0.3s ease 0s;
+    margin: 40px auto 60px 0;
+}
+.button:hover{
+    background-color: #d04104;
+}
+.three-block__button {
+    position: relative;
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin: -30px auto 40px 20px;
+}
+
+/* --------------------- Второй сектор -----------------------------*/
+.two-block__body {
+    color: #111111;
+}
+.two-block-first {
+    width: 570px;
+    height: 358px;
+    position: relative;
+    margin: 37px auto 0 0;
+    background-color: #f2f2f2;
+}
+.two-block__body img{
+    width: 336px;
+    height: 428px;
+    position: relative;
+    object-position: 33.99% 50%;
+    background-position: 33.99% 50%;
+    box-shadow: 11px 18px 40px 0 rgb(128 128 128 / 50%);
+    margin: -518px auto 0 248px;
+    object-fit: cover;
+    display: block;
+    vertical-align: middle;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.two-block__text {
+    width: 506px;
+    min-height: 355px;
+    height: auto;
+    margin: -286px 0 0 auto;
+    position: relative;
+    flex: 1;
+    max-width: 100%;
+}
+.two-block__text blockquote {
+    font-style: italic;
+    padding-left: 20px;
+    border-width: 4px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 10px 20px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-style: solid;
+    font-size: 1rem;
+    line-height: 1.6;
+    border-color: #ff5126;
+    position: relative;
+    margin: 35px 20px;
+}
+
+/* --------------------- Третий сектор -----------------------------*/
+.three-block__body {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    display: flex;
+    flex: 1 1 100%;
+    margin: 0px 20px;
+}
+.three-block-first h1 {
+    min-height: 100px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-weight: 700;
+    margin: 15px 20px 0;
+    font-size: 34px;
+    line-height: 1.1;
+}
+.three-block-first {
+    margin: 0px 0px 46px 0px;
+}
+.three-block__stolbs {
+    display: flex;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.three-block__stolbone {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.three-block__stolbone p {
+    position: relative;
+    margin: 40px 20px;
+}
+
+.three-block__stoltwo p {
+    position: relative;
+    margin: 40px 20px;
+}
+.three-block-second{
+    margin: 20px;
+}
+.three-block-second img {
+    object-fit: cover;
+    display: block;
+    vertical-align: middle;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 526px;
+    height: 622px;
+    position: relative;
+    margin: -61px 0 -61px auto;
+}
+.three-block__all{
+    margin: -20px;
+    width: 570px;
+    left: 0;
+    right: auto;
+    background-color: #f2f2f2;
+}
+
+/* --------------------- Четвертый сектор -----------------------------*/
+.four-block__body {
+    min-height: 550px;
+}
+.four-block__fon {
+    width: 570px;
+    height: 386px;
+    position: relative;
+    margin: 166px auto 0 0;
+    color: #000000;
+    background-color: #ff5126;
+    
+}
+.four-block__contur {
+    position: relative;
+    width: 1040px;
+    margin: -350px auto 0 50px;
+    display: flex;
+}
+.four-block__conturone {
+    border: 10px solid transparent;
+    background-image: url("D:/Visual Studia Code/Бутылки/img/boottles_four.jpeg");
+    min-height: 452px;
+    background-position: 50% 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.four-block__conturtwo {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.four-block__conturtwo h2 {
+    position: relative;
+    font-weight: 700;
+    margin: 45px 20px 0;
+}
+.four-block__conturtwo p {
+    position: relative;
+    margin: 20px 20px 0;
+}
+.four-block__button {
+    position: relative;
+    font-weight: 700;
+    font-size: 0.875rem;
+    margin: 30px auto 45px 20px;
+}
+
+/* --------------------- Пятый сектор -----------------------------*/
+.five-block__body {
+    min-height: 372px;
+    position: relative;
+    margin: 0 auto;
+    color: #000000;
+}
+.five-block__one {
+    min-height: 233px;
+    position: relative;
+    flex: 1;
+    max-width: 100%;
+    flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
+}
+.five-block__one blockquote {
+    font-style: italic;
+    padding-left: 20px;
+    border-width: 4px;
+    font-family: 'Open Sans',sans-serif !important;
+    border-color: #ff5126;
+    padding: 10px 20px;
+    border-top-width: 0 !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 0 !important;
+    border-style: solid;
+}
+.five-block__two {
+    position: relative;
+    margin: 0 20px;
+    line-height: 1.6;
+}
+.five-block__customer{
+    display: flex;
+}
+
+/* --------------------- Шестой сектор -----------------------------*/
+.page__six-block {
+    min-height: 498px;
+    margin: 0 auto;
+}
+.six-block__all{
+    display: flex;
+}
+.six-block__body img{
+    width: 316px;
+    height: 423px;
+    position: relative;
+    object-position: 12.65% 50%;
+    background-position: 12.65% 50%;
+    box-shadow: 14px 17px 37px 0 rgb(128 128 128 / 35%);
+    margin: -156px auto 0 0;
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+    vertical-align: middle;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.six-block__huf {
+    width: 570px;
+    left: auto;
+    right: 0;
+    background-color: #f2f2f2;
+    position: absolute;
+    height: 100%;
+    margin: -75px 50px 50px 50px;
+}
+.six-block__title {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex: 0  0 70%;
+    line-height: 1.1;
+}
+.six-block__title h2{
+    position: relative;
+    margin: 30px 0 0;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif ;
+}
+.six-block__title p{
+    position: relative;
+    margin: 16px 0 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* --------------------- Седьмой сектор -----------------------------*/
+.page__seven-block {
+}
+.seven-block__body {
+    display: flex;
+    min-height: 567px;
+    position: relative;
+}
+.seven-block__sectone {
+}
+.seven-block__title {
+    justify-content: center;
+    display: flex !important;
+    flex-direction: column;
+    position: relative;
+    flex: 1;
+    max-width: 100%;
+}
+.seven-block__title h1{
+    position: relative;
+    font-weight: 700;
+    margin: 10px 20px;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-size: 2.25rem;
+    line-height: 1.1;
+
+    
+}
+.seven-block__stolbs {
+    display: flex;
+}
+.seven-block__one {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.seven-block__one p {
+    position: relative;
+    margin: 25px 10px 0px 0px;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: sans-serif;
+    text-align: justify ;
+}
+
+.seven-block__two {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.seven-block__two p {
+    position: relative;
+    margin: 25px 20px 0px 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: sans-serif;
+    text-align: justify ;
+}
+.seven-block__sectwo img{
+    min-height: 356px;
+    height: 390px;
+    width: 620px;
+}
+.seven-block__fon{
+    width: 570px;
+    left: auto;
+    right: 0;
+    color: #111111;
+    background-color: #f2f2f2;
+    position: absolute;
+    height: 100%;
+    margin: -75px 50px 50px 50px;
+    height: 650px;
+
+}
